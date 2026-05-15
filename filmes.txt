@@ -1,0 +1,27 @@
+project hail mary;2026;2h37m;O professor de ci�ncias Ryland Grace acorda sozinho em uma nave espacial sem mem�ria e descobre que precisa salvar a Terra de uma amea�a misteriosa que est� fazendo o Sol perder energia.;4.3;
+up;2009;1h35m;Um idoso viúvo realiza o sonho de explorar a Am�rica do Sul ao prender milhares de balões em sua casa mas acaba levando junto um escoteiro tagarela em uma aventura inesperada.;4.1;
+coraline;2009;1h40m;Uma menina curiosa encontra uma porta secreta em sua nova casa que leva a um mundo paralelo aparentemente perfeito mas que esconde perigos assustadores.;4.2;
+marty supreme;2026;2h15m;Um jovem prod�gio do t�nis de mesa busca reconhecimento e enfrenta desafios pessoais enquanto tenta alcançar o topo do esporte profissional.;4.1;
+before sunset;2004;1h20m;Jesse e Celine se reencontram em Paris anos após sua primeira noite juntos e passam algumas horas conversando sobre suas vidas e sentimentos.;4.3;
+harry potter e o prisioneiro de azkaban;2004;2h22m;Harry retorna a Hogwarts e descobre que um perigoso prisioneiro fugiu de Azkaban e pode estar à sua procura enquanto segredos do passado são revelados.;4.1;
+detona ralph;2012;1h41m;Um vil�o de videogame decide provar que pode ser um herói e embarca em uma aventura por diferentes jogos em busca de aceita��o�o.;3.6;
+a ilha do medo;2010;2h18m;Um detetive investiga o desaparecimento de uma paciente em um hospital psiquiátrico isolado e começa a questionar sua própria sanidade.;4.2;
+entre facas e segredos;2019;2h10m;Um detetive investiga a morte misteriosa de um escritor rico e descobre segredos e mentiras dentro de sua família excêntrica.;4.0;
+ainda estou aqui;2024;2h15m;Uma mulher enfrenta memórias dolorosas do passado enquanto tenta reconstruir sua vida e manter sua família unida durante tempos difíceis.;4.3;
+questão de tempo;2013;2h03m;Um jovem descobre que pode viajar no tempo e decide usar esse poder para melhorar sua vida amorosa e valorizar momentos importantes.;4.1
+as vantagens de ser invisível;2012;1h43m;Um adolescente introvertido encontra amizade e apoio em dois colegas mais velhos enquanto lida com traumas e descobertas pessoais.;4.0;
+universidade monstros;2013;1h44m;Mike e Sulley se conhecem na faculdade e precisam aprender a trabalhar juntos para se tornarem monstros assustadores profissionais.;3.5;
+shrek;2001;1h30m;Um ogro solit�rio embarca em uma missão para resgatar uma princesa e acaba descobrindo o valor da amizade e do amor.;4.1;
+o silêncio dos inocentes;1991;1h58m;Uma jovem agente do FBI pede ajuda a um assassino canibal para capturar outro criminoso extremamente perigoso.;4.3;
+psicose;1960;1h49m;Uma secretária em fuga se hospeda em um motel isolado administrado por um homem estranho e eventos aterrorizantes começam a acontecer.;4.3;
+halloween;1978;1h31m;Um assassino mascarado retorna à sua cidade natal na noite de Halloween para perseguir jovens indefesas.;3.8
+barbie;2023;1h54m;Uma boneca que vive em um mundo perfeito começa a questionar sua realidade e viaja para o mundo real em busca de respostas.;3.7;
+super mario bros o filme;2023;1h32m;Dois irmãos encanadores são transportados para um reino mágico e precisam salvar uma princesa de um vilão poderoso.;3.2;
+pânico;1996;1h51m;Um grupo de adolescentes é perseguido por um assassino mascarado que usa filmes de terror como inspiração para seus crimes.;4.0;
+o clube da luta;1999;2h19m;Um homem insatisfeito cria um clube secreto de lutas com um estranho carismático e acaba envolvido em um movimento perigoso.;4.3;
+o menu;2022;1h47m;Um grupo de clientes ricos visita um restaurante exclusivo onde o chef prepara um jantar cheio de surpresas perturbadoras.;3.5;
+o show de truman;1998;1h43m;Um homem descobre que toda sua vida é transmitida como um programa de televisão e começa a buscar a verdade.;4.2;
+de volta para o futuro;1985;1h56m;Um adolescente viaja acidentalmente para o passado e precisa garantir que seus pais se apaixonem para salvar sua própria existência.;4.2;
+homem aranha;2002;2h01m;Um jovem estudante ganha poderes após ser picado por uma aranha modificada e decide usá-los para combater o crime.;3.9;
+labirinto;1986;1h41m;Uma jovem precisa atravessar um labirinto mágico cheio de criaturas estranhas para resgatar seu irmão de um rei poderoso.;3.8;
+procurando nemo;2003;1h40m;Um peixe superprotetor atravessa o oceano em busca de seu filho desaparecido enfrentando inúmeros perigos.;4.0;
