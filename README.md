@@ -2,7 +2,8 @@
 
 O projeto foi desenvolvido para a disciplina de desenvolvimento de algoritmos do curso de ciência da computação. Consiste em simular uma plataforma em que o usuário possa pesquisar por filmes e realizar ações como curtir, criar listas de reprodução e adicionar filmes a elas.
 
-### Tecnologias utilizadas: Linguagem C, .txt, Dev-C++
+### Tecnologias utilizadas: 
+Linguagem C, .txt, Dev-C++
 
 ## Funcionalidades:
 - Cadastro e login de usuários
