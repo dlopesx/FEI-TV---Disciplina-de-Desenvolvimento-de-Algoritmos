@@ -19,7 +19,7 @@ typedef struct{ // struct que armazena usuarios
 
 void cadastrar_usuario(){ 
 
-    Usuario usuario = {0}; // struct base pra cadastrar um por vez na funçao
+    Usuario usuario = {0}; // struct base pra cadastrar um por vez na funï¿½ao
 
     printf("\nInsira um apelido: ");
     fgets(usuario.nome, sizeof(usuario.nome), stdin); 
@@ -35,7 +35,7 @@ void cadastrar_usuario(){
     
     while (1){
 
-        FILE *usuarios_verificacao = fopen("usuarios.txt", "r");
+        FILE *usuarios_verificacao = fopen("dados/usuarios.txt", "r");
 
         bool username_invalido = false;
 
@@ -48,9 +48,9 @@ void cadastrar_usuario(){
         };
         fclose(usuarios_verificacao);
 
-        // validando pra ver se o username digitado é válido 
+        // validando pra ver se o username digitado ï¿½ vï¿½lido 
         if (username_invalido == true){
-            printf("Esse username já está cadastrado. Digite um válido: ");
+            printf("Esse username jï¿½ estï¿½ cadastrado. Digite um vï¿½lido: ");
             fgets(usuario.username, sizeof(usuario.username), stdin);
             usuario.username[strlen(usuario.username) - 1] = '\0';
         }
@@ -65,8 +65,8 @@ void cadastrar_usuario(){
 
     // abrindo arquivo e cadastrando usuario
  
-    FILE *usuarios = fopen("usuarios.txt", "a");
-    FILE *likes = fopen("likes.txt", "a"); // inicia uma linha de curtidas para cada usuario
+    FILE *usuarios = fopen("dados/usuarios.txt", "a");
+    FILE *likes = fopen("dados/likes.txt", "a"); // inicia uma linha de curtidas para cada usuario
 
     fprintf(usuarios, "%s,%s,%s\n", usuario.nome, usuario.username, usuario.senha);
     fprintf(likes, "%s\n", usuario.username);
@@ -74,7 +74,7 @@ void cadastrar_usuario(){
     fclose(usuarios);
     fclose(likes);
 
-    printf("\nUsuário cadastrado com sucesso! Voltando ao menu de login...\n");
+    printf("\nUsuï¿½rio cadastrado com sucesso! Voltando ao menu de login...\n");
     Sleep(2000);
     system("cls");
 }
@@ -84,7 +84,7 @@ int verificar_username(char* nome_user, char *username, char *senha){
 
     char nome[50], username_temp[256], senha_temp[50];
 
-    FILE *usuarios = fopen("usuarios.txt", "r");
+    FILE *usuarios = fopen("dados/usuarios.txt", "r");
 
     while(fscanf(usuarios, "%[^,],%[^,],%[^,\n]\n", nome, username_temp, senha_temp) == 3){
         if (strcmp(username, username_temp) == 0){
@@ -132,7 +132,7 @@ void logar_usuario(char *usernamecpy){
                     break;
                 }
                 else{
-                    printf("Senha inválida. Tente novamente: ");
+                    printf("Senha invï¿½lida. Tente novamente: ");
                     fgets(senha_digitada, sizeof(senha_digitada), stdin);
                     senha_digitada[strcspn(senha_digitada, "\n")] = '\0';
                 }
@@ -141,7 +141,7 @@ void logar_usuario(char *usernamecpy){
             break;
         }
         else{
-            printf("Esse username não existe. Tente novamente ou 0 para voltar: ");
+            printf("Esse username nï¿½o existe. Tente novamente ou 0 para voltar: ");
             fgets(username, sizeof(username), stdin);
             username[strcspn(username, "\n")] = '\0';
             if (strcmp(username, "0") == 0){

@@ -13,15 +13,15 @@ void menu_pesquisar_filme(char *titulo, char *ano, char *duracao, char *descrica
 
     char comando[8];
 
-    printf("Escolha uma opção: ");
+    printf("Escolha uma opcao: ");
 
-    if (verificar_se_curtido(titulo, usernamecpy) == 1){ // só exibe a opcao de curtir se o usuario nao tiver curtido
+    if (verificar_se_curtido(titulo, usernamecpy) == 1){ // exibe a opcao de curtir se o usuario nao tiver curtido
         printf(
         "\n[ 1 ] - Curtir filme\n"
         );
         strcpy(comando, "like");
     }
-    else if (verificar_se_curtido(titulo, usernamecpy) == 0){ // só exibe a opcao de descurtir se o usuario ja curtiu
+    else if (verificar_se_curtido(titulo, usernamecpy) == 0){ // exibe a opcao de descurtir se o usuario ja curtiu
         printf(
         "\n[ 1 ] - Descurtir filme\n"
         );
@@ -31,7 +31,7 @@ void menu_pesquisar_filme(char *titulo, char *ano, char *duracao, char *descrica
    printf(
         "[ 2 ] - Adicionar filme na playlist\n"
         "[ 3 ] - Voltar\n"
-        "\nOpção: ");
+        "\nOpï¿½ï¿½o: ");
 
     while (1){
 
@@ -57,7 +57,7 @@ void menu_pesquisar_filme(char *titulo, char *ano, char *duracao, char *descrica
                 system("cls");
                 return;
             default:
-                printf("\nPor favor, selecione uma opção válida: ");
+                printf("\nPor favor, selecione uma opï¿½ï¿½o vï¿½lida: ");
                 break;
             }
     }
@@ -68,11 +68,11 @@ void menu_playlists(char *usernamecpy){
     char titulo[102], ano[6], duracao[7], descricao[502], nota_letterboxd[5], opcao;
 
     printf(
-        "\nSelecione uma opção:\n"
-        "\n[ 1 ] - Adicionar filme em lista de reprodução\n"
-        "[ 2 ] - Remover filme de lista de reprodução\n"
+        "\nSelecione uma opï¿½ï¿½o:\n"
+        "\n[ 1 ] - Adicionar filme em lista de reproduï¿½ï¿½o\n"
+        "[ 2 ] - Remover filme de lista de reproduï¿½ï¿½o\n"
         "[ 3 ] - Voltar\n"
-        "Sua opção: "
+        "Sua opï¿½ï¿½o: "
     );
     while (1){
 
@@ -96,7 +96,7 @@ void menu_playlists(char *usernamecpy){
 
                 return;
             default:
-                printf("\nPor favor, selecione uma opção válida: ");
+                printf("\nPor favor, selecione uma opcao valida: ");
                 break;
         }
     }
@@ -110,13 +110,13 @@ void menu_principal(char *usernamecpy){
     while (1){
 
         printf(
-        "\n================ PÁGINA INICIAL ================\n"
+        "\n================ PAGINA INICIAL ================\n"
         "[ 1 ] - Pesquisar filme\n"
-        "[ 2 ] - Criar lista de reprodução de filmes\n"
-        "[ 3 ] - Deletar lista de reprodução\n"
-        "[ 4 ] - Acessar listas de reprodução\n"
+        "[ 2 ] - Criar lista de reproducao de filmes\n"
+        "[ 3 ] - Deletar lista de reproducao\n"
+        "[ 4 ] - Acessar listas de reproducao\n"
         "[ 5 ] - Voltar ao login\n"
-        "\nOpção: ");
+        "\nOpcao: ");
         
         char opcao;
             
@@ -127,19 +127,19 @@ void menu_principal(char *usernamecpy){
         switch (opcao)
         {
         case '1':
-            printf("Você selecionou: [ 1 ] - Pesquisar filme\n");
+            printf("VocÃª selecionou: [ 1 ] - Pesquisar filme\n");
             if (pesquisar_filme(titulo, ano,duracao,descricao,nota_letterboxd) != 2){
                 menu_pesquisar_filme(titulo, ano, duracao, descricao, nota_letterboxd, usernamecpy);
                 break;
             };
             break;
         case '2': 
-            printf("Você selecionou: [ 2 ] - Criar lista de reprodução de filmes\n");
+            printf("VocÃª selecionou: [ 2 ] - Criar lista de reproducao de filmes\n");
             printf("\n");
             criar_lista(usernamecpy);
             break;
         case '3':
-            printf("Você selecionou: [ 3 ] - Deletar lista de reprodução\n");
+            printf("VocÃª selecionou: [ 3 ] - Deletar lista de reproducao\n");
             printf("\n");
             if (mostrar_playlists(usernamecpy) == 1){
                 break;
@@ -149,7 +149,7 @@ void menu_principal(char *usernamecpy){
             }
             break;
         case '4':
-            printf("Você selecionou: [ 4 ] - Acessar listas de reprodução\n");
+            printf("VocÃª selecionou: [ 4 ] - Acessar listas de reproducao\n");
             printf("\n");
             if (mostrar_playlists(usernamecpy) == 1){
                 break;
@@ -159,12 +159,12 @@ void menu_principal(char *usernamecpy){
             }
             break;
         case '5':
-            printf("Você selecionou: [ 5 ] - Voltar ao login\n");
+            printf("VocÃª selecionou: [ 5 ] - Voltar ao login\n");
             printf("\n");
             return;
             break;
         default:
-            printf("\nPor favor, selecione uma opção válida: ");
+            printf("\nPor favor, selecione uma opï¿½ï¿½o vï¿½lida: ");
 
         }
     }
@@ -181,10 +181,10 @@ void menu_login(){
         "\n=======================================================\n"
         "                       FEI TV                          \n"
         "=======================================================\n"
-        "[ 1 ] - Cadastrar novo usuário\n"
+        "[ 1 ] - Cadastrar novo usuario\n"
         "[ 2 ] - Efetuar login\n"
         "[ 0 ] - Sair\n"
-        "\nOpção: ");
+        "\nOpcao: ");
 
         char opcao;
             
@@ -204,7 +204,8 @@ void menu_login(){
             logar_usuario(usernamecpy);
             break;
         default:
-            printf("\nPor favor, selecione uma opção                válida: ");
+            system("cls");
+            printf("\nPor favor, selecione uma opcao                valida: ");
         }
     }
 }

@@ -40,7 +40,7 @@ void criar_lista(char *usernamecpy){
             return;
         }
 
-        if (verificar_existencia("playlists.txt", nome_lista, usernamecpy) == 1){
+        if (verificar_existencia("dados/playlists.txt", nome_lista, usernamecpy) == 1){
             printf("Essa lista jÃ¡ existe. Digite novamente ou 0 para voltar: \n ");
         }
         else{
@@ -48,7 +48,7 @@ void criar_lista(char *usernamecpy){
         }
     };
 
-    FILE *playlists = fopen("playlists.txt", "a");
+    FILE *playlists = fopen("dados/playlists.txt", "a");
 
     fprintf(playlists, "%s;%s;\n", usernamecpy, nome_lista);
 
@@ -71,7 +71,7 @@ void excluir_lista(char *usernamecpy){
         fgets(nome_lista, sizeof(nome_lista), stdin);
         nome_lista[strcspn(nome_lista, "\n")] = '\0';
 
-        if (verificar_existencia("playlists.txt", nome_lista, usernamecpy) == 0){
+        if (verificar_existencia("dados/playlists.txt", nome_lista, usernamecpy) == 0){
             if (strcmp(nome_lista, "0") == 0){
                 return;
             }
@@ -82,8 +82,8 @@ void excluir_lista(char *usernamecpy){
         }
     };
 
-    FILE *playlists = fopen("playlists.txt", "r");
-    FILE *playlists_nova = fopen("playlists_nova.txt", "w");
+    FILE *playlists = fopen("dados/playlists.txt", "r");
+    FILE *playlists_nova = fopen("dados/playlists_nova.txt", "w");
 
     while (fgets(linha_atual, sizeof(linha_atual), playlists)){ // pega cada linha e transforma numa string
 
@@ -101,8 +101,8 @@ void excluir_lista(char *usernamecpy){
     Sleep(3000);
     system("cls");
 
-    remove("playlists.txt");
-    rename("playlists_nova.txt", "playlists.txt");
+    remove("dados/playlists.txt");
+    rename("dados/playlists_nova.txt", "playlists.txt");
 }
 
 void adicionar_filme(char *filme, char*usernamecpy){
@@ -123,9 +123,9 @@ void adicionar_filme(char *filme, char*usernamecpy){
             return;
         }
 
-        if (verificar_existencia("playlists.txt", nome_lista, usernamecpy) == 1){ // verificando se o filme ja existe na playlist
+        if (verificar_existencia("dados/playlists.txt", nome_lista, usernamecpy) == 1){ // verificando se o filme ja existe na playlist
 
-            FILE *playlists = fopen("playlists.txt", "r");
+            FILE *playlists = fopen("dados/playlists.txt", "r");
 
             while (fgets(linha_atual, sizeof(linha_atual), playlists)){
                 
@@ -160,8 +160,8 @@ void adicionar_filme(char *filme, char*usernamecpy){
         };
     };
 
-    FILE *playlists = fopen("playlists.txt", "r");
-    FILE *playlists_nova = fopen("playlists_nova.txt", "w");
+    FILE *playlists = fopen("dados/playlists.txt", "r");
+    FILE *playlists_nova = fopen("dados/playlists_nova.txt", "w");
 
     while (fgets(linha_atual, sizeof(linha_atual), playlists)){ // pega cada linha e transforma numa string
     
@@ -185,8 +185,8 @@ void adicionar_filme(char *filme, char*usernamecpy){
     system("cls");
 
 
-    remove("playlists.txt");
-    rename("playlists_nova.txt", "playlists.txt");
+    remove("dados/playlists.txt");
+    rename("dados/playlists_nova.txt", "playlists.txt");
 }
 
 
@@ -195,7 +195,7 @@ int mostrar_playlists(char *usernamecpy){
     char linha_atual[1024] = {0}, usuario[50], nome_playlist[600];
     int contador = 0;
     
-    FILE *arq_filmes = fopen("playlists.txt", "r");
+    FILE *arq_filmes = fopen("dados/playlists.txt", "r");
 
     while (fgets(linha_atual, sizeof(linha_atual), arq_filmes)){
 
@@ -208,7 +208,7 @@ int mostrar_playlists(char *usernamecpy){
     }
 
     if (contador == 0){
-        printf("\nNão existe nenhuma lista de reprodução. Voltando...\n");
+        printf("\nNï¿½o existe nenhuma lista de reproduï¿½ï¿½o. Voltando...\n");
         fclose(arq_filmes);
         Sleep(3000);
         system("cls");
@@ -263,7 +263,7 @@ void remover_filme(char *filme, char* usernamecpy){
         fgets(nome_lista, sizeof(nome_lista), stdin);
         nome_lista[strcspn(nome_lista, "\n")] = '\0';
 
-        if (verificar_existencia("playlists.txt", nome_lista, usernamecpy) == 1){
+        if (verificar_existencia("dados/playlists.txt", nome_lista, usernamecpy) == 1){
             break;
         }
         else{
@@ -271,8 +271,8 @@ void remover_filme(char *filme, char* usernamecpy){
         }
     };
 
-    FILE *playlists = fopen("playlists.txt", "r");
-    FILE *playlists_nova = fopen("playlists_nova.txt", "w");
+    FILE *playlists = fopen("dados/playlists.txt", "r");
+    FILE *playlists_nova = fopen("dados/playlists_nova.txt", "w");
 
     while (fgets(linha_atual, sizeof(linha_atual), playlists)){ // pega cada linha e transforma numa string
     
@@ -315,6 +315,6 @@ void remover_filme(char *filme, char* usernamecpy){
     Sleep(3000);
     system("cls");
 
-    remove("playlists.txt");
-    rename("playlists_nova.txt", "playlists.txt");
+    remove("dados/playlists.txt");
+    rename("dados/playlists_nova.txt", "playlists.txt");
 }
